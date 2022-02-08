@@ -1,0 +1,3 @@
+[submodule "modules/HWM"]
+	path = modules/HWM
+	url = https://attabotics.visualstudio.com/ATTAGo/_git/HardwareManagement

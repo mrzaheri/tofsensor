@@ -1,0 +1,22 @@
+This is to create a git_describe.h header file and rename the output files based on the git information and store them into (PROJECT_DIR)/out folder.
+
+The XS_postbuild.bat and XS_prebuild.bat are post and pre build sample scripts respectively created
+
+Here is how they must be used:
+
+CrossStudio:
+Pre build commad:
+$(ProjectDir)/modules/HWM/tools/git_info/XS_prebuild.bat "$(ProjectDir)" "$(Configuration)"
+
+Post build command:
+$(ProjectDir)/modules/HWM/tools/git_info/XS_postbuild.bat "$(ProjectDir)" "$(Configuration)" "$(ProjectName)" 0
+
+
+
+System Workbench for STM32:
+Pre build commad:
+${ProjDirPath}/modules/HWM/tools/git_info/XS_prebuild.bat "${ProjDirPath}" "${ConfigName}"
+
+Post build command:
+${ProjDirPath}/modules/HWM/tools/git_info/XS_postbuild.bat "${ProjDirPath}" "${ConfigName}" "${ProjName}" "${ConfigName}"
+

@@ -1,0 +1,5 @@
+out/
+.settings/
+*.pyc
+/RangeSensor Release/
+/RangeSensor Debug/
